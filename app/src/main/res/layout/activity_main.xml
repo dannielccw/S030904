@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -17,4 +18,33 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:id="@+id/autoCompleteTextView" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/flower1"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:id="@+id/button2"
+        android:onClick="click2" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:onClick="click1" />
 </RelativeLayout>
